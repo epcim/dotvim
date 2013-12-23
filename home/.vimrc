@@ -500,3 +500,22 @@ noremap <Leader>du :DOTUpdate<cr>
 noremap <Leader>t :ReformatTable()<CR>
 noremap <Leader>f :ReflowTable()<CR>
 
+filetype off                  " required!
+
+
+
+
+## VUNDLE
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My bundles here:
+"
+" original repos on GitHub
+Bundle 'tpope/vim-fugitive'
+
