@@ -505,14 +505,13 @@ filetype off                  " required!
 
 
 
-## VUNDLE
+"" VUNDLE
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle - required! - done by homeshick
+"Bundle 'gmarik/vundle'
 
 " My bundles here:
 "
