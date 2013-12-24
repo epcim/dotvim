@@ -20,11 +20,11 @@ lnif() {
                 while `test -L ${ORIGDEST}`;do echo ORIGDEST="$ORIGDEST";ORIGDEST=`readlink ${ORIGDEST}`;done
                 if [ ! "$1" == "$ORIGDEST" ]; then
                     today=`date +%Y%m%d_%s`
-                    mv $2 $2-$today
+                    mv -v $2 $2-$today
                 fi
         fi
 
-        ln -sf "$1" "$2"
+        ln -vsf "$1" "$2"
         ret="$?"
     fi
 }
@@ -60,9 +60,15 @@ update_links() {
     fi
 }
 
+install_bundles() {
+     vim -u "$HOME/.vimrc.bundles" +BundleInstall! +BundleClean +qall
+}
 
 ##MAIN
 if [ "$1" == "run" ]; then
+	cd $HOME
         init_cfg
         update_links
+        install_bundles
+	cd -
 fi
