@@ -7,7 +7,25 @@ init_cfg() {
     debug_mode='0'
     fork_maintainer='0'
 
-    endpath=`dirname $0`/home/.${app_name}-3
+    endpath=`dirname $0`/home/.${app_name}
+}
+
+backup_all_existing() {
+    #Backup existing files (if not mine/spf13-vim links)
+    for i in .vimrc.bundles .vimrc.before .vimrc; do
+        bnif $HOME/$i $endpath/$i
+    done
+}
+
+bnif() {
+    if [ -e $1 ]; then
+            ORIGDEST=$1
+            while `test -L ${ORIGDEST}`;do echo ORIGDEST="$ORIGDEST";ORIGDEST=`readlink ${ORIGDEST}`;done
+            if [ ! "$2" == "$ORIGDEST" ]; then
+                today=`date +%Y%m%d_%s`
+                echo mv -v $1 $1-$today
+            fi
+    fi
 }
 
 lnif() {
@@ -31,9 +49,11 @@ lnif() {
 
 update_links() {
 
-    lnif "$endpath/.vimrc" "$HOME/.vimrc"
-    lnif "$endpath/.vimrc.bundles" "$HOME/.vimrc.bundles"
-    lnif "$endpath/.vimrc.before" "$HOME/.vimrc.before"
+    #NOT NEEDED ANY MORE - LINKS ARE SET BY HOMESHICK.
+
+    #lnif "$endpath/.vimrc" "$HOME/.vimrc"
+    #lnif "$endpath/.vimrc.bundles" "$HOME/.vimrc.bundles"
+    #lnif "$endpath/.vimrc.before" "$HOME/.vimrc.before"
     #lnif "$endpath/.vim" "$HOME/.vim"
 
     # Useful
@@ -66,9 +86,9 @@ install_bundles() {
 
 ##MAIN
 if [ "$1" == "run" ]; then
-	cd $HOME
+    cd $HOME
         init_cfg
-        update_links
+        backup_all_existing
         install_bundles
-	cd -
+    cd -
 fi
