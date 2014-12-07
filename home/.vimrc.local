@@ -1,1 +1,4 @@
-set clipboard+=unnamed
+set clipboard+=unnamed   "Mac OSX
+set guifont=Andale\ Mono\ Regular\ 10,Menlo\ Regular\ 10,Consolas\ Regular\ 10,Courier\ New\ Regular\ 10
+let NERDTreeQuitOnOpen=0        " keep NERDTree opened
+set autowrite                   " automatically write a file when leaving a modified buffer
