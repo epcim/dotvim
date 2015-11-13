@@ -1,4 +1,15 @@
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "vadv/vim-chef"
+"Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "tomtom/tlib_vim"
+"Bundle "garbas/vim-snipmate"
+""Bundle 'spf13/vim-colors'
+
+Bundle 'epcim/vim-chef'
+Bundle 'vim-ruby/vim-ruby'
+
+Bundle 'SirVer/ultisnips'
+"Bundle 'honza/vim-snippets' - already exist
+Bundle 'gregf/ultisnips-chef'
+
+
+" Manual
+" 'github.com/trogdoro/xiki/blob/master/misc/vim/xiki.vim'

@@ -1,4 +1,39 @@
 set clipboard+=unnamed   "Mac OSX
 set guifont=Andale\ Mono\ Regular\ 10,Menlo\ Regular\ 10,Consolas\ Regular\ 10,Courier\ New\ Regular\ 10
 let NERDTreeQuitOnOpen=0        " keep NERDTree opened
+let NERDTreeWinSize=25          " panel width
 set autowrite                   " automatically write a file when leaving a modified buffer
+
+" COLORS
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+"colorscheme moss
+"colorscheme ir_black
+"colorscheme shine
+colorscheme solarized
+
+
+
+" SNIPPETS
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+
+
+"au BufNewFile,BufRead Berksfile set filetype=ruby
+
+" xiki / xsh
+" https://github.com/trogdoro/xiki
+"let $XIKI_DIR="~/hg2g/apps/xiki"
+"let $XIKI="~/hg2g/apps/xiki/misc/vim/xiki.vim"
+"if filereadable(expand($XIKI))
+"    source $XIKI
+"end
+
