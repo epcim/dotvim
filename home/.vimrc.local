@@ -37,3 +37,14 @@ let g:UltiSnipsEditSplit="vertical"
 "    source $XIKI
 "end
 
+
+" diff mode
+if &diff
+    set diffopt+=iwhite
+endif
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set textwidth=125
+

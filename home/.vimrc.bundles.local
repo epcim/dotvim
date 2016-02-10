@@ -10,6 +10,7 @@ Bundle 'SirVer/ultisnips'
 "Bundle 'honza/vim-snippets' - already exist
 Bundle 'gregf/ultisnips-chef'
 
+Bundle 'powerman/vim-plugin-AnsiEsc'
 
 " Manual
 " 'github.com/trogdoro/xiki/blob/master/misc/vim/xiki.vim'
