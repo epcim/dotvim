@@ -13,7 +13,7 @@ endif
 "colorscheme moss
 "colorscheme ir_black
 "colorscheme shine
-colorscheme solarized
+"colorscheme solarized
 
 
 
@@ -48,3 +48,6 @@ set shiftwidth=2
 set softtabstop=2
 set textwidth=125
 
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1

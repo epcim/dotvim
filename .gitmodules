@@ -1,6 +1,0 @@
-[submodule "home/.vim/bundle/vundle"]
-	path = home/.vim/bundle/vundle
-	url = https://github.com/gmarik/vundle.git
-[submodule "home/.spf13-vim"]
-	path = home/.spf13-vim
-	url = https://github.com/spf13/spf13-vim.git

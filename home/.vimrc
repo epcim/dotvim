@@ -1,1 +1,1 @@
-.spf13-vim/.vimrc
+.spf13-vim-3/.vimrc
