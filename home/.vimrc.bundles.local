@@ -3,6 +3,7 @@
 "Bundle "garbas/vim-snipmate"
 ""Bundle 'spf13/vim-colors'
 
+"Bundle 'saltstack/salt-vim'
 Bundle 'epcim/vim-chef'
 Bundle 'vim-ruby/vim-ruby'
 
