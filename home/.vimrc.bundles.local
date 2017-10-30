@@ -13,5 +13,24 @@ Bundle 'gregf/ultisnips-chef'
 
 Bundle 'powerman/vim-plugin-AnsiEsc'
 
+"DirDiff
+Bundle 'will133/vim-dirdiff'
+
+"Salt
+"Bundle 'saltstack/salt-vim'
+"Yaml faster
+Bundle 'stephpy/vim-yaml'
+
+"Gundo
+Bundle 'sjl/gundo.vim'
+
+" Nice colors
+Bundle 'mhartington/oceanic-next'
+"Bundle 'vim-airline/vim-airline-themes'
+
 " Manual
 " 'github.com/trogdoro/xiki/blob/master/misc/vim/xiki.vim'
+"
+
+" V-block increment numbers
+Bundle 'vim-scripts/VisIncr'
