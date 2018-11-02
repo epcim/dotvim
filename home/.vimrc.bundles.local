@@ -7,7 +7,8 @@
 Bundle 'epcim/vim-chef'
 Bundle 'vim-ruby/vim-ruby'
 
-Bundle 'SirVer/ultisnips'
+Bundle 'py3'
+"Bundle 'SirVer/ultisnips'
 "Bundle 'honza/vim-snippets' - already exist
 Bundle 'gregf/ultisnips-chef'
 
@@ -34,3 +35,30 @@ Bundle 'mhartington/oceanic-next'
 
 " V-block increment numbers
 Bundle 'vim-scripts/VisIncr'
+
+
+" React Native, Node
+" https://drivy.engineering/setting-up-vim-for-react/
+" Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
+"Bundle 'mattn/emmet-vim'
+Bundle 'moll/vim-node'
+"let g:ale_emit_conflict_warnings = 0
+"Bundle 'w0rp/ale'
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
+
+" Terraform
+Bundle 'hashivim/vim-terraform'
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+let g:terraform_remap_spacebar=1
+
+
+if has('python3')
+    let g:gundo_prefer_python3 = 1
+endif

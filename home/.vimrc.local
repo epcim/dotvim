@@ -67,3 +67,5 @@ autocmd BufNewFile,BufRead *.hot set filetype=yaml
 ""autocmd FileType yaml,yml setlocal expandtab shiftwidth=2 softtabstop=2
 
 
+" fzf
+set rtp+=~/.linuxbrew/opt/fzf
