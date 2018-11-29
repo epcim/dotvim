@@ -62,3 +62,12 @@ let g:terraform_remap_spacebar=1
 if has('python3')
     let g:gundo_prefer_python3 = 1
 endif
+
+" Go
+" Bundle 'vim-go'
+Bundle 'W0rp/ale'
+Bundle 'Shougo/deoplete.nvim'
+Bundle 'roxma/nvim-yarp'
+Bundle 'roxma/vim-hug-neovim-rpc'
+let g:deoplete#enable_at_startup = 1
+

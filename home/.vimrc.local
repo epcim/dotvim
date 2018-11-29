@@ -4,22 +4,44 @@ let NERDTreeQuitOnOpen=0        " keep NERDTree opened
 let NERDTreeWinSize=25          " panel width
 set autowrite                   " automatically write a file when leaving a modified buffer
 
+
+set wrap
+
 " COLORS
 if has('gui_running')
     set background=light
 else
     set background=dark
 endif
-"colorscheme moss
-"colorscheme ir_black
-"colorscheme shine
-"colorscheme solarized
 
-colorscheme OceanicNext
+"colorscheme shine
+"colorscheme ir_black
+"colorscheme moss
+"colorscheme solarized
+"colorscheme magicka
+"colorscheme OceanicNext
+colorscheme apprentice
+
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 
 
 " Dirdiff
 let g:DirDiffEnableMappings = 1
+let g:DirDiffExcludes = "system,CVS,*.class,*.exe,.*.swp,pbgo*,pbdoc*,pbswagger*,pbccp*"
+
+" Diff collor - 1
+hi DiffText   cterm=none ctermfg=Black ctermbg=Red gui=none guifg=Black guibg=Red
+hi DiffChange cterm=none ctermfg=Black ctermbg=LightMagenta gui=none guifg=Black guibg=LightMagenta
+" Diff collor - 2
+"highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+"highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+"highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+"highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
+" Diff collor - 3
+"if &diff
+"		colorscheme solarized
+"endif
 
 
 " SNIPPETS
@@ -68,4 +90,5 @@ autocmd BufNewFile,BufRead *.hot set filetype=yaml
 
 
 " fzf
-set rtp+=~/.linuxbrew/opt/fzf
+set rtp+=~/usr/local/bin/fzf
+
