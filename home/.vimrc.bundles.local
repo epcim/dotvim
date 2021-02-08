@@ -17,6 +17,9 @@ Bundle 'powerman/vim-plugin-AnsiEsc'
 "DirDiff
 Bundle 'will133/vim-dirdiff'
 
+"Diff
+"Bundle 'chrisbra/vim-diff-enhanced'
+
 "Salt
 "Bundle 'saltstack/salt-vim'
 "Yaml faster
@@ -71,3 +74,15 @@ Bundle 'roxma/nvim-yarp'
 Bundle 'roxma/vim-hug-neovim-rpc'
 let g:deoplete#enable_at_startup = 1
 
+" uuid
+
+
+" Jsonnet
+Plugin 'google/vim-jsonnet'
+
+
+" Distraction-free writing in Vim
+Plugin 'junegunn/goyo.vim'
+
+" CamelToHyphenAll
+"Plugin 'tpope/vim-repeat'
