@@ -615,3 +615,4 @@ else
   let g:airline_symbols.linenr = ''
 endif
 
+let g:python3_host_prog = "~/.pyenv/versions/py3nvim/bin/python"
